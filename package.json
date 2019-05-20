@@ -1,0 +1,19 @@
+{
+  "name": "crowd-funding",
+  "version": "1.0.0",
+  "description": "A blockchain based crowd funding app",
+  "main": "index.js",
+  "scripts": {
+    "test": "truffle test"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "smart-contract"
+  ],
+  "author": "Rahul Devaskar <apostopher@gmail.com> (https://apostopher.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "bignumber.js": "8.1.1"
+  }
+}
