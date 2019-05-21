@@ -69,10 +69,8 @@ contract CrowdFunding {
   function withdraw() public inState(State.Failed) {
     require(amounts[msg.sender] > 0, "Nothing was contributed");
     uint contributed = amounts[msg.sender];
+    msg.sender.transfer(contributed);
     amounts[msg.sender] = 0;
-    if (!msg.sender.send(contributed)) {
-      amounts[msg.sender] = contributed;
-    }
   }
 
   function currentTime() internal view returns(uint) {
